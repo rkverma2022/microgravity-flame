@@ -1,0 +1,6 @@
+{
+  "name": "Flame In Microgravity",
+  "description": "Interactive Super Intelligence (SI) dashboard & computer vision research platform analyzing NASA microgravity combustion data, flame morphology, and deep space fire safety insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
