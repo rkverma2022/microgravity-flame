@@ -16,8 +16,32 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description, type: 'website' },
-  twitter: { card: 'summary_large_image', title, description },
+  // 🌐 Adds standard favicon and apple touch icons
+  icons: {
+    icon: '/favicon.ico',          // Standard 16x16 or 32x32 icon
+    shortcut: '/favicon-32x32.png', // Optional crisp 32x32 version
+    apple: '/apple-touch-icon.png', // Optional 180x180 for iOS home screens
+  },
+  // 📊 Adds the social share banner image
+  openGraph: { 
+    title, 
+    description, 
+    type: 'website',
+    images: [
+      {
+        url: '/og-banner.png', // Path to your banner image
+        width: 1200,
+        height: 630,
+        alt: 'Flame in Freefall — NASA Space Apps Challenge Dashboard',
+      }
+    ]
+  },
+  twitter: { 
+    card: 'summary_large_image', 
+    title, 
+    description,
+    images: ['/og-banner.png'], // Mirror the banner for Twitter/X previews
+  },
 };
 
 export const viewport: Viewport = {
