@@ -22,7 +22,7 @@ export const TeamCollaborationModal: React.FC<TeamCollaborationModalProps> = ({
   const [copiedEmail, setCopiedEmail] = useState(false);
 
   const targetEmail = 'rajkumarverma70790@gmail.com';
-  const [whatsAppNumber, setWhatsAppNumber] = useState('917079000000');
+  const [whatsAppNumber, setWhatsAppNumber] = useState('916388257447');
 
   if (!isOpen) return null;
 
@@ -161,13 +161,13 @@ export const TeamCollaborationModal: React.FC<TeamCollaborationModalProps> = ({
           <div className="space-y-1 pt-1">
             <div className="flex items-center justify-between text-xs text-muted">
               <span>Target WhatsApp Contact Number:</span>
-              <span className="text-body font-mono">Default: +91 70790 00000</span>
+              <span className="text-body font-mono">Default: +91 63882 57447</span>
             </div>
             <input
               type="text"
               value={whatsAppNumber}
               onChange={(e) => setWhatsAppNumber(e.target.value)}
-              placeholder="e.g. 917079000000"
+              placeholder="e.g. 916388257447"
               className="w-full bg-inset border border-theme rounded p-1.5 text-title text-xs font-mono"
             />
           </div>
